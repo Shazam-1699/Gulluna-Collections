@@ -1,0 +1,96 @@
+section{
+    padding-top: 70px;
+    float: left;
+}
+.section-text{
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    max-width: 60%;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.section-text h1{
+  
+  text-align: center;
+  font-size: 38px;
+  font-style: italic;
+}
+.section-text p{
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: 100;
+    padding: 10px;
+    text-align: center;
+
+}
+.section-text button{
+    background-color: black;
+    color: white;
+    font-size: 32px;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    height: 68px;
+    width: 228px;
+    padding: 10px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+  .image-container {
+    width: 534.46px;
+    height: 808px;
+    overflow: visible;
+    position: relative;
+    z-index: 1;
+    left: 15.45%;
+    margin-top: 150px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background: rgb(209,209,209);
+    background: linear-gradient(0deg, rgba(209,209,209,1) 39%, rgba(12,2,2,1) 89%);
+}
+
+.image-container img {
+    position: absolute;
+    z-index: 100;
+    padding-top: 20px;
+    width: 597.69px;
+    height: 100%;
+   
+    object-fit: cover;
+}
+.collections{
+    background: rgb(209,209,209);
+    background: linear-gradient(270deg, rgba(209,209,209,1) 0%, rgba(12,2,2,1) 8%);
+    z-index: 100;
+    height: 150px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+.collections h1{
+    font-family: "Fjalla One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5vh;
+}
+.collections p{
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: 100;
+}
+  
