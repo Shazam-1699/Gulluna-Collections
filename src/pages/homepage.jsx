@@ -6,12 +6,20 @@ import Model from "../assets/images/Mahira Khan.png";
 import Navbar from "../components/partials/navbar";
 import PC from "../assets/images/PC.png";
 
+
 function Homepage() {
   // ✅ Products Data
   const products = {
     "products": [
       {
         "id": 1,
+        "image": PC, 
+        "name": "Pasmina Shawl",
+        "description": "Luxurious, soft wool shawl, often handwoven.",
+        "price": 10000
+      },
+      {
+        "id": 2,
         "image": PC, 
         "name": "Pasmina Shawl",
         "description": "Luxurious, soft wool shawl, often handwoven.",
@@ -72,7 +80,7 @@ function Homepage() {
       </div>
 
       {/* Card Section */}
-      <section className="bg-gradient-to-l from-black to-gray-300 h-40 w-full text-white text-center py-5">
+      <section className="bg-gradient-to-l from-black to-gray-300 h-40 w-full text-white text-center py-5 z-10">
         <h1 className="text-5xl font-fjalla">New Collections</h1>
         <p className="text-lg font-light font-open-sans mt-2">
           Discover Guluna Clothing's latest collection, where timeless tradition
@@ -81,11 +89,14 @@ function Homepage() {
       </section>
 
       {/* Products Mapping */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-10">
-        {products.products.map((p) => (
-          <ProductCard key={p.id} image={p.image} title={p.name} description={p.description} price={p.price} />
-        ))}
-      </div>
+      <div className="flex overflow-x-auto gap-4 p-10 z-20 ">
+  {products.products.map((p) => (
+    <div key={p.id} className="flex-none ml-[15%] w-[320px]"> {/* Adjust the width here */}
+      <ProductCard image={p.image} title={p.name} description={p.description} price={p.price} />
+    </div>
+  ))}
+</div>
+
 
       {/* Big Sale Section */}
       <div className="flex flex-row">
