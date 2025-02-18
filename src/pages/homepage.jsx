@@ -5,7 +5,10 @@ import Salepic from "../assets/images/Salepic.png";
 import Model from "../assets/images/Mahira Khan.png";
 import Navbar from "../components/partials/navbar";
 import PC from "../assets/images/PC.png";
-
+import PC2 from "../assets/images/Mahira Khan beige.png";
+import PC3 from "../assets/images/Mahira Khan Black.png";
+import PC4 from "../assets/images/Mahira Khan red.png";
+import PC5 from "../assets/images/Mahira Khan White.png";
 
 function Homepage() {
   // ✅ Products Data
@@ -13,13 +16,6 @@ function Homepage() {
     "products": [
       {
         "id": 1,
-        "image": PC, 
-        "name": "Pasmina Shawl",
-        "description": "Luxurious, soft wool shawl, often handwoven.",
-        "price": 10000
-      },
-      {
-        "id": 2,
         "image": PC, 
         "name": "Pasmina Shawl",
         "description": "Luxurious, soft wool shawl, often handwoven.",
@@ -32,7 +28,6 @@ function Homepage() {
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
-  const [seconds, setSeconds] = useState(0);
 
   const deadline = "December, 31, 2025"; 
 
@@ -91,7 +86,7 @@ function Homepage() {
       {/* Products Mapping */}
       <div className="flex overflow-x-auto gap-4 p-10 z-20 ">
   {products.products.map((p) => (
-    <div key={p.id} className="flex-none ml-[15%] w-[320px]"> {/* Adjust the width here */}
+    <div key={p.id} className="flex-none  w-[320px]"> {/* Adjust the width here */}
       <ProductCard image={p.image} title={p.name} description={p.description} price={p.price} />
     </div>
   ))}
