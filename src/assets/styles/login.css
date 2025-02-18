@@ -1,49 +1,46 @@
 /* Global styles for the body */
-body {
-  font-family: "Arial", sans-serif; /* Sets the font for the entire page */
+.container {
+  font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
-  display: flex; /* Centers content using flexbox */
+  display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Makes the body take full viewport height */
-  background-color: #f9f9f9; /* Light gray background color */
+  height: 100vh;
 }
 
 /* Container for the login form */
 .login-container {
   display: flex;
-  width: 900px; /* Sets the width of the login container */
-  background-color: #fff; /* White background */
-  border-radius: 20px; /* Rounds the corners */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
-  overflow: hidden; /* Prevents content from overflowing */
+  width: 900px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 /* Left section styles */
 .left-section {
-  background: rgb(209,209,209);
-  background: linear-gradient(0deg, rgba(209,209,209,1) 0%, rgba(0,0,0,1) 36%); /* Gradient background */
+  background: linear-gradient(0deg, rgba(209,209,209,1) 0%, rgba(0,0,0,1) 36%);
   color: white;
-  width: 40%; /* Takes 40% of the container width */
+  width: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 40px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  float: left; /* Float is not needed when using flexbox */
 }
 
 /* Image inside the left section */
 .left-section img {
   width: 80%;
-  max-width: 250px; /* Restricts max size of the image */
+  max-width: 250px;
 }
 
 /* Right section styles */
 .right-section {
-  width: 60%; /* Takes 60% of the container width */
+  width: 60%;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -63,7 +60,7 @@ body {
 .welcome-text {
   font-size: 32px;
   font-weight: bold;
-  font-family: "Comic Sans MS", cursive; /* Unconventional font choice */
+  font-family: "Comic Sans MS", cursive;
 }
 
 /* Subtitle text */
@@ -90,7 +87,7 @@ body {
   background-color: transparent;
   border-radius: 20px;
   cursor: pointer;
-  transition: 0.3s ease; /* Smooth transition on hover */
+  transition: 0.3s ease;
 }
 
 /* Active toggle button style */
@@ -107,14 +104,14 @@ form {
 }
 
 /* Input field styling */
-.input-box{
-  border-radius: 30px;
+.input-box {
   background-color: rgb(255, 255, 255);
-  width: 250px;
-  height: 30px;
-  margin-left: 170px; /* Hardcoded margin might not be responsive */
+  width: 100%;
+  height: 40px;
   outline: none;
   border-bottom: 1px solid #aaa;
+  padding: 0 15px;
+  text-align: center;
 }
 
 /* Login button styling */
@@ -158,5 +155,5 @@ form {
 
 /* Hover effect for social media icons */
 .social-icons .icon:hover {
-  color: #007bff; /* Changes color on hover */
+  color: #007bff;
 }

@@ -35,6 +35,7 @@ function Login() {
   };
 
   return (
+    <div className="container">
     <div className="login-container">
       <div className="left-section">
         <img src={logo} alt="Guluna Collections" />
@@ -96,6 +97,7 @@ function Login() {
 
         <p className="or-text">OR</p>
       </div>
+    </div>
     </div>
   );
 }

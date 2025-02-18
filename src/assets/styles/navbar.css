@@ -1,13 +1,13 @@
 /* Global styles for the body */
 body {
-    font-family: "Arial", sans-serif; /* Sets the font for the entire page */
+    font-family: "Arial", sans-serif; 
     margin: 0;
     padding: 0;
-    display: flex; /* Centers content using flexbox */
+    display: flex; 
     justify-content: center;
     align-items: center;
-     /* Makes the body take full viewport height */
-    background-color: #f9f9f9; /* Light gray background color */
+    background-color: #f9f9f9; 
+    width: 100%;
   }
   
   /* Navigation bar styles */
@@ -19,8 +19,12 @@ body {
     top: 0;
     margin-top: 0; /* Pushes navbar down */
     z-index: 1; /* Ensures navbar stays on top */
-    position: fixed; /* Fixes navbar in place */
+    position: fixed; 
     margin-bottom: 50px; /* Unnecessary when using position: fixed */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  
   }
   
   /* Logo styling */
@@ -70,7 +74,7 @@ body {
   }
   
   /* Input field styling */
-  input {
+  #search {
     border-radius: 30px;
     background-color: rgb(255, 255, 255);
     width: 250px;
