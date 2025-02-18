@@ -1,44 +1,49 @@
+/* Global styles for the body */
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", sans-serif; /* Sets the font for the entire page */
   margin: 0;
   padding: 0;
-  display: flex;
+  display: flex; /* Centers content using flexbox */
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #f9f9f9;
+  height: 100vh; /* Makes the body take full viewport height */
+  background-color: #f9f9f9; /* Light gray background color */
 }
 
+/* Container for the login form */
 .login-container {
   display: flex;
-  width: 900px;
-  background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+  width: 900px; /* Sets the width of the login container */
+  background-color: #fff; /* White background */
+  border-radius: 20px; /* Rounds the corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+  overflow: hidden; /* Prevents content from overflowing */
 }
 
+/* Left section styles */
 .left-section {
   background: rgb(209,209,209);
-  background: linear-gradient(0deg, rgba(209,209,209,1) 0%, rgba(0,0,0,1) 36%);
+  background: linear-gradient(0deg, rgba(209,209,209,1) 0%, rgba(0,0,0,1) 36%); /* Gradient background */
   color: white;
-  width: 40%;
+  width: 40%; /* Takes 40% of the container width */
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 40px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  float
+  float: left; /* Float is not needed when using flexbox */
 }
 
+/* Image inside the left section */
 .left-section img {
   width: 80%;
-  max-width: 250px;
+  max-width: 250px; /* Restricts max size of the image */
 }
 
+/* Right section styles */
 .right-section {
-  width: 60%;
+  width: 60%; /* Takes 60% of the container width */
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -46,6 +51,7 @@ body {
   text-align: center;
 }
 
+/* Back link styles */
 .back-link {
   font-size: 12px;
   text-align: left;
@@ -53,24 +59,28 @@ body {
   cursor: pointer;
 }
 
+/* Welcome text styling */
 .welcome-text {
   font-size: 32px;
   font-weight: bold;
-  font-family: "Comic Sans MS", cursive;
+  font-family: "Comic Sans MS", cursive; /* Unconventional font choice */
 }
 
+/* Subtitle text */
 .sub-text {
   font-size: 14px;
   color: #555;
   margin-bottom: 20px;
 }
 
+/* Toggle buttons section */
 .toggle-buttons {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
 
+/* Toggle buttons styling */
 .toggle-buttons button {
   width: 120px;
   padding: 10px;
@@ -80,30 +90,34 @@ body {
   background-color: transparent;
   border-radius: 20px;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: 0.3s ease; /* Smooth transition on hover */
 }
 
+/* Active toggle button style */
 .toggle-buttons button.active {
   background-color: black;
   color: white;
 }
 
+/* Form styling */
 form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-input {
-  width: 100%;
-  padding: 12px;
-  border: none;
-  border-bottom: 1px solid #aaa;
-  font-size: 14px;
+/* Input field styling */
+.input-box{
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255);
+  width: 250px;
+  height: 30px;
+  margin-left: 170px; /* Hardcoded margin might not be responsive */
   outline: none;
-  background-color: transparent;
+  border-bottom: 1px solid #aaa;
 }
 
+/* Login button styling */
 .login-btn {
   background-color: black;
   color: white;
@@ -116,29 +130,33 @@ input {
   transition: 0.3s;
 }
 
+/* Hover effect for the login button */
 .login-btn:hover {
   background-color: #333;
 }
 
+/* "Or" separator text */
 .or-text {
   font-size: 14px;
   margin: 20px 0;
   color: #888;
 }
 
+/* Social media icons container */
 .social-icons {
   display: flex;
   justify-content: center;
   gap: 15px;
 }
 
+/* Social media icons */
 .social-icons .icon {
   font-size: 20px;
   cursor: pointer;
   transition: 0.3s;
 }
 
+/* Hover effect for social media icons */
 .social-icons .icon:hover {
-  color: #007bff;
+  color: #007bff; /* Changes color on hover */
 }
-
