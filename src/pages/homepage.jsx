@@ -80,7 +80,7 @@ function Homepage() {
         </p>
       </section>
 
-      {/* ✅ Fixed Products Mapping */}
+      {/* Products Mapping */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-10">
         {products.products.map((p) => (
           <ProductCard key={p.id} image={p.image} title={p.name} description={p.description} price={p.price} />
@@ -117,6 +117,12 @@ function Homepage() {
         </div>
       </div>
       {/* products below sale */}
+
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-10">
+        {products.products.map((p) => (
+          <ProductCard key={p.id} image={p.image} title={p.name} description={p.description} price={p.price} />
+        ))}
+      </div>
 
       <Footer />
     </div>
