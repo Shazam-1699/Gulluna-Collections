@@ -13,7 +13,7 @@ export default function ProductCard(props) {
         <p className="product-description">
           {props.description}
         </p>
-        <p className="product-price">PKR {props.price}.</p>
+        <p className="product-price">PKR {props.price}</p>
       </div>
     </div>
   );
