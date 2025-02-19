@@ -1,91 +1,84 @@
-/* Global styles for the body */
-/* body {
-    font-family: "Arial", sans-serif; 
-    margin: 0;
-    padding: 0;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    background-color: #f9f9f9; 
-    width: 100%;
-  } */
-  
-  /* Navigation bar styles */
-  nav {
-    background: rgb(209,209,209);
-    background: linear-gradient(0deg, rgba(209,209,209,1) 0%, rgba(12,2,2,1) 13%); /* Gradient background */
-    height: 10%; /* Sets navbar height */
-    width: 100%; /* Full width */
-    top: 0;
-    margin-top: 0; /* Pushes navbar down */
-    z-index: 1; /* Ensures navbar stays on top */
-    position: fixed; 
-    margin-bottom: 50px; /* Unnecessary when using position: fixed */
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-  
-  }
-  
-  /* Logo styling */
-  .logo {
-    color: white;
-    float: left;
-    text-align: center;
-    margin-right: 100px;
-  }
-  
-  .logo h1 {
-    font-family: "Lemon", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 30px;
-  }
-  
-  .logo p {
-    font-family: Poppins;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 21px;
-    letter-spacing: 103%;
-    margin-left: 10px;
-  }
-  
-  /* Navbar link styles */
-  .navbar {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-evenly;
-  }
-  
-  .navbar a {
-    color: white;
-    font-size: 20px;
-  }
-  
-  .navbar a:hover {
-    font-size: 25px;
-    text-decoration: underline;
-    transition: 0.3s all;
-  }
-  
-  .navbar a:active {
-    text-decoration: underline;
-  }
-  
-  /* Input field styling */
-  #search {
-    border-radius: 30px;
-    background-color: rgb(255, 255, 255);
-    width: 250px;
-    height: 30px;
-    margin-left: 170px;
-    outline: none;
-  }
-  
-  /* Social media icons styling */
-  .icons img {
-    display: inline-flex;
-    margin-left: 20px;
-  }
-  
+/* Removed body styles and applied them to a wrapper instead */
+.wrapper {
+  font-family: "Arial", sans-serif; 
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9; 
+  width: 100%; /* Ensures full viewport height */
+}
+
+/* Navigation bar styles */
+nav {
+  background: rgb(209,209,209);
+  background: linear-gradient(0deg, rgba(209,209,209,1) 0%, rgba(12,2,2,1) 13%);
+  height: 10%;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  position: fixed; 
+}
+
+/* Logo styling */
+.logo {
+  color: white;
+  float: left;
+  text-align: center;
+  margin-right: 100px;
+}
+
+.logo h1 {
+  font-family: "Lemon", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.logo p {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 21px;
+  letter-spacing: 103%;
+  margin-left: 10px;
+}
+
+/* Navbar link styles */
+.navbar {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+}
+
+.navbar a {
+  color: white;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  font-size: 25px;
+  text-decoration: underline;
+  transition: 0.3s all;
+}
+
+.navbar a:active {
+  text-decoration: underline;
+}
+
+/* Input field styling */
+#search {
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255);
+  width: 250px;
+  height: 30px;
+  margin-left: 170px;
+  outline: none;
+}
+
+/* Social media icons styling */
+.icons img {
+  display: inline-flex;
+  margin-left: 20px;
+}

@@ -7,6 +7,7 @@ function Navbar(){
     const [search,setSearch]=useState("");
 
     return (
+        <div className="wrapper">
             <nav>
                 <div className="navbar">
                 <div className="logo">
@@ -26,6 +27,7 @@ function Navbar(){
                 </div>
                 </div>
             </nav>
+            </div>
     );
 }
 
