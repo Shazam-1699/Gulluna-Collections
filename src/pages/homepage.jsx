@@ -50,7 +50,7 @@ function Homepage() {
       <Navbar />
       
       {/* Hero Section */}
-      <div className="flex flex-row justify-between items-center py-20 mt-[300vh]">
+      <div className="flex flex-row justify-between items-center py-20">
         <section className="max-w-3xl text-center flex flex-col items-center">
           <h1 className="text-4xl italic font-bold font-dancing-script">
             Elevate Your Shopping Experience Today!
@@ -65,7 +65,7 @@ function Homepage() {
             Explore Now
           </button>
         </section>
-        <div className="w-[534px] h-[808px] mt-36 relative rounded-tl-[100px] rounded-br-[100px] bg-gradient-to-t from-black to-gray-300">
+        <div className="w-[534px] h-[808px] relative rounded-tl-[100px] rounded-br-[100px] bg-gradient-to-t from-black to-gray-300">
           <img
             src={Model}
             alt="Styled Woman"
