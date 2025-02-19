@@ -1,28 +1,56 @@
 import React from "react";
 import Navbar from "../components/partials/navbar";
+import "../assets/styles/productpage.css";
+import MKR from "../assets/images/Mahira Khan red.png";
 
 function productPage(){
     return (
         <div>
             <Navbar />
-            <div className="" style={{width: "100%"}}>
-                <section>
-                    <h1>Red & Black Silk</h1>
-                    <h1>PKR 20,000</h1>
-
-                    <h1>Description</h1>
-                    <form action="">
-                    <label>Fabric</label>
-                    <p>Premium Silk</p>
-                    <label>Color</label>
-                    <input type="radio" id="red" value="Red" />
-                    <input type="radio" id="black" value="Black" />
-                    <input type="button" value="Add to Cart" />
-                    <input type="button" value="Buy Now" />
-                    </form>
+            <div className="product-container">
+                {/* Product Details Section */}
+                <section className="product-details">
+                    <div className="details">
+                    <div className="product-name">
+                        <h1 className="name">Red & Black Silk</h1>
+                        <h1 className="price"><span id="PKR">PKR</span>    20,000</h1>
+                    </div>
+                    
+                    <div className="product-description">
+                        <h1 className="description">Description</h1>
+                        <form className="description-form">
+                            <p className="heading-text"><span className="heading">Fabric:</span>Premium Silk</p>
+                            <label className="heading">Color:</label>
+                            <input type="radio" className="radio" name="Color" id="red" value="Red" />
+                            <input type="radio" className="radio" name="Color" id="black" value="Black" />
+                            <p className="heading-text"><span className="heading">Occasion:</span>Festive, Wedding, Party</p>
+                            <p className="heading-text"><span className="heading">Features:</span>Soft Texture, Traditional Weaving</p>
+                            <input type="button" className="product-button" value="Add to Cart" />
+                            <input type="button" className="product-button" value="Buy Now" />
+                        </form>
+                    </div>
+                    </div>
                 </section>
-                <section>
-
+                {/* Picture Section */}
+                <section className="product-image">
+                    <div className="Full-back">
+                        <div className="black-lines-div"></div>                    </div>
+                    <div className="lines">
+                                <div className="large-line"> </div>
+                                <div className="small-line"> </div>
+                                <div className="large-line"> </div>
+                                <div className="small-line"> </div>
+                                <div className="large-line"> </div>
+                                <div className="small-line"> </div>
+                                <div className="large-line"> </div>
+                                <div className="small-line"> </div>
+                                <div className="large-line"> </div>
+                                <div className="small-line"> </div>
+                                <div className="large-line"> </div>
+                                <div className="small-line"> </div>
+                            </div>
+                        <div className="picture"></div>
+                    
                 </section>
             </div>
         </div>
