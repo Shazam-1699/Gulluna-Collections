@@ -94,11 +94,11 @@
 .picture{
     position: relative;
     background: linear-gradient(270deg, #DFDFDF 3.52%, #797979 100%);
-    width: 48%;
+    width: 52%;
     height: 100%;
     border-radius: 154px;
     overflow: hidden;
-    left: -23%;
+    left: -26%;
     top: 13%;
 }
 .picture img{
