@@ -69,34 +69,45 @@
     width: 50%;
 }
 .Full-back{
+    position: relative;
     width: 200px;
     height: 400px;
     border-radius: 154px;
     border-width: 1px;
     z-index: 0px;
+    overflow: show;
+    left: 30%;
+    padding: 20px;
 }
 .black-lines-div{
+    position: relative;
     background-color: black;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     top: 0;
     border-bottom-right-radius: 154px;
     border-bottom-left-radius: 154px;
     margin-top: none;
     z-index: 10px;
-    right: 30%;
+    left: 50%;
 }
 .picture{
+    position: relative;
     background: linear-gradient(270deg, #DFDFDF 3.52%, #797979 100%);
     width: 200px;
-    height: 300px;
-    left: 768px;
+    height: 100%;
     border-radius: 154px;
+    overflow: hidden;
+}
+.picture img{
+    position: relative;
+    top: 20%;
+
 }
 .lines{
     gap: 10px;
+    position: relative;
 }
 .large-line{
-    height: 200px;
     border: 1px solid white;
 }
