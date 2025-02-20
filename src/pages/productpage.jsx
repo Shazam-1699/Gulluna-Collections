@@ -33,8 +33,8 @@ function productPage(){
                 </section>
                 {/* Picture Section */}
                 <section className="product-image">
-                    <div className="Full-back"> <div className="picture"> <img src={MKR} alt="Mahira Khan" /> </div> </div>
-                        <div className="black-lines-div"></div> 
+                    <div className="Full-back"> <div className="black-lines-div"> <div className="picture"> <img src={MKR} alt="Mahira Khan" /> </div> </div> </div>
+                         
                         
                     <div className="lines">
                                 <div className="large-line"> </div>
