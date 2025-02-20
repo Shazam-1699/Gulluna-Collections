@@ -1,8 +1,10 @@
 import React from "react";
 import Navbar from "../components/partials/navbar";
+import Productcard from "../components/partials/productcard";
 import "../assets/styles/productpage.css";
 import MKR from "../assets/images/Mahira Khan red.png";
-import arrow from "../assets/icons/right arrow.svg";
+import Footer from "../components/partials/footer";
+
 
 function productPage(){
     return (
@@ -57,7 +59,10 @@ function productPage(){
                 <h1>You May Also Like This</h1>
                 <span><a href=""> See All  </a></span>
             </div>
+            <br />
+            <Productcard />
 
+            <Footer />
         </div>
         
     );
