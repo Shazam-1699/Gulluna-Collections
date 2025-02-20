@@ -116,3 +116,19 @@
     background-color: white;
     height: 80%;
 }
+
+/* Product Description */
+
+.divider{
+    text-align: center;
+    padding: 20px;
+}
+.divider h1{
+    display: inline-block;
+}
+.divider span{
+    float: inline-end;
+}
+.divider span img{
+    float: right;
+}

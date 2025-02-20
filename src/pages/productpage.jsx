@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/partials/navbar";
 import "../assets/styles/productpage.css";
 import MKR from "../assets/images/Mahira Khan red.png";
+import arrow from "../assets/icons/right arrow.svg";
 
 function productPage(){
     return (
@@ -49,11 +50,14 @@ function productPage(){
                                 <div className="small-line"> </div>
                                 <div className="large-line"> </div>
                                 <div className="small-line"> </div>
-                            </div>
-                        
-                    
+                            </div>      
                 </section>
             </div>
+            <div className="divider">
+                <h1>You May Also Like This</h1>
+                <span><a href=""> See All  </a></span>
+            </div>
+
         </div>
         
     );
