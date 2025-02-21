@@ -14,7 +14,7 @@
 nav {
   background: rgb(209,209,209);
   background: linear-gradient(0deg, rgba(209,209,209,1) 0%, rgba(12,2,2,1) 13%);
-  height: 10%;
+  height: 13%;
   width: 100%;
   top: 0;
   z-index: 1;
@@ -22,27 +22,29 @@ nav {
 }
 
 /* Logo styling */
-.logo {
-  color: white;
-  float: left;
-  text-align: center;
-  margin-right: 100px;
-}
-
-.logo h1 {
+.lemon-regular {
   font-family: "Lemon", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 30px;
 }
 
-.logo p {
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 21px;
-  letter-spacing: 103%;
-  margin-left: 10px;
+
+#logo {
+  color: white;
+font-family: "Lemon";
+font-size: 43px;
+
+}
+
+span{
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-weight:lighter;
+font-size: 13px;
+display: block;
+letter-spacing: 12px;
+padding-left: 5px;
+padding-bottom: 5px;
+color: white;
 }
 
 /* Navbar link styles */
