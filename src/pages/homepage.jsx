@@ -50,7 +50,7 @@ function Homepage() {
       <Navbar />
       
       {/* Hero Section */}
-      <div className="flex flex-row justify-between items-center py-20">
+      <div className="flex flex-row  justify-between items-center py-20">
         <section className="max-w-3xl text-center flex flex-col items-center">
           <h1 className="text-4xl italic font-bold font-dancing-script">
             Elevate Your Shopping Experience Today!

@@ -12,14 +12,14 @@ function productPage(){
             <Navbar />
             <div className="product-container">
                 {/* Product Details Section */}
-                <section className="product-details">
+                <section className="product-page-details">
                     <div className="details">
                     <div className="product-name">
                         <h1 className="name">Red & Black Silk</h1>
                         <h1 className="price"><span id="PKR">PKR</span>    20,000</h1>
                     </div>
                     
-                    <div className="product-description">
+                    <div className="product-page-description">
                         <h1 className="description">Description</h1>
                         <form className="description-form">
                             <p className="heading-text"><span className="heading">Fabric:</span>Premium Silk</p>
@@ -35,7 +35,7 @@ function productPage(){
                     </div>
                 </section>
                 {/* Picture Section */}
-                <section className="product-image">
+                <section className="product-page-image">
                     <div className="Full-back"> <div className="black-lines-div"> <div className="picture"> <img src={MKR} alt="Mahira Khan" /> </div> </div> </div>
                          
                         

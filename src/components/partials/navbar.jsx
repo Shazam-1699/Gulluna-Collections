@@ -11,7 +11,7 @@ function Navbar(){
             <nav>
                 <div className="navbar">
                 <div id="logo">
-                GULLUNA <span>COLLECTIONS</span> 
+                GULLUNA <span id="collections">COLLECTIONS</span> 
                 </div>
                 <a href="/home">Home</a>
                 <a href="">Categories</a>

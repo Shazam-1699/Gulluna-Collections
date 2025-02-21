@@ -1,0 +1,556 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+/* ---------------------------------- Main SECTION */
+/*                                   RIGHT PORTION    ----------------------- */
+
+main {
+ /* display:flex;  */
+border-style: solid;
+height: 820px;
+border-color: rgb(129, 129, 129);
+margin: 40px;
+margin-bottom: 70px;
+/* padding: 50px; */
+border-radius: 20px;
+border-width: 3px;
+position: relative;
+}
+
+#location {
+ display: flex; 
+position: relative; 
+float: right;
+height: 100%;
+width: 30%;
+background-color: darkgrey;
+border-radius: 18px;
+flex-direction: column;
+ align-items:start; 
+/* padding-left: 40px ; */
+background: linear-gradient(180deg, #010001 0%, #FEFEFE 100%);
+
+
+}
+h2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+   padding-top: 50px; 
+    padding-left: 0px; 
+    align-self: center;
+    justify-self: center;
+    position: relative;
+}
+
+/* #options{
+display: flex;
+flex-direction: column;
+padding-left: 30px;
+
+}
+
+#cash{
+
+} */
+
+.payment-option {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 30px;
+padding-top: 40px;
+
+align-self: center;
+    justify-self: center;
+    position: relative;
+}
+
+.payment-option label {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #ffffff;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.payment-option input {
+    margin-right: 10px;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: relative;
+    align-self: center;
+ justify-self: center;
+ /* position: relative; */
+}
+
+.payment-option input:checked::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    
+
+    align-self: center;
+ justify-self: center;
+ /* position: relative; */
+    
+}
+
+#ship{
+font-family:Arial, Helvetica, sans-serif;
+font-size: 30px;
+color: white;
+font-weight: bold;
+padding-top: 40px;
+padding-left: 0px;
+
+align-self: center;
+    justify-self: center;
+    position: relative;
+}
+
+
+#address{
+
+    align-self: center;
+    justify-self: center;
+    position: relative;
+
+}
+
+#add1 {
+/* display: flex;   */
+/* position: relative;  */
+/* float: right; */
+height: 120px;
+width:300px ;
+background-color: rgb(255, 255, 255);
+border-radius: 7px;
+flex-direction: column; 
+ /* align-items:center;  */
+ border-width:10px;
+ border-color: #000;
+ padding-left: 25px; 
+  margin-left: 0px; 
+ margin-top: 20px; 
+ padding-top: 10px;
+ color: rgb(146, 146, 146);
+ align-self: center;
+ justify-self: center;
+ position: relative;
+ 
+}
+
+#add2{
+    
+        /* display: flex;  */
+        /* position: relative;  */
+        /* float: right; */
+        height: 120px;
+        width:300px ;
+        background-color: rgb(255, 255, 255);
+        border-radius: 7px;
+        flex-direction: column; 
+         /* align-items:center;  */
+         border-width:10px;
+         border-color: #000;
+         padding-left: 25px;
+         margin-left: 0px;
+         margin-top: 20px;
+         padding-top: 10px;
+         color: rgb(146, 146, 146);
+ align-self: center;
+ justify-self: center;
+ position: relative;
+    
+}
+
+
+#place{
+height: 50px;
+width: 170px;
+border-radius: 25px;
+border-style: none;
+margin-left: 0px;
+margin-top: 15px; 
+background: linear-gradient(180deg, #FFFFFF 14.17%, #B3B3B3 100%);
+
+font-size: 16px;
+font-family: sans-serif;
+font-weight: 500;
+align-self: center;
+ justify-self: center;
+ position: relative;
+}
+
+#break{
+margin-top: 40px; 
+width: 70%;
+height: 20px;
+
+align-self: center;
+ justify-self: center;
+ position: relative;
+
+}
+
+#address label{
+font-weight: bold;
+color: #000;
+}
+
+#method {
+    align-self: center;
+    justify-self: center;
+    position: relative;
+    padding-top: 35px;
+}
+button {
+ 
+    width: 150px;
+    height: 40px;
+
+}
+
+#method button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(180deg, #010001 0%, #FEFEFE 100%);
+
+    transition: background-color 3s;
+    border-style: none;
+    margin-left: 0px;
+    margin-top: 15px; 
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 500;
+    align-self: center;
+    justify-self: center;
+    position: relative;
+    border-radius: 16px;
+
+}
+
+/* #method button.active {
+    background-color: blue;
+    color: white;
+} */
+
+#method button:focus {
+    background: rgb(179,179,179);
+background: linear-gradient(29deg, rgba(179,179,179,1) 20%, rgba(254,254,254,1) 89%);
+
+color: #000;
+}
+
+/* #method button:active {
+    background-color: darkblue;
+} */
+
+
+
+/* ----------------------------------LEFT PORTION---------------------- */
+
+
+#left{
+
+display:flex;  
+position: relative;  
+/* float: right; */
+height: 100%;
+width: 70%;
+border-radius: 18px;
+background-color: rgb(255, 255, 255);
+align-items:start;
+/* justify-self: center;  */
+flex-direction: column;
+
+}
+
+#heading2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+   /* padding-top: 50px;  */
+    padding-left: 0px; 
+    /* align-self: center; */
+    /* justify-self: center; */
+    position: relative;
+    padding-top: 100px;
+    padding-left: 140px;
+}
+
+#seperator1{
+width: 70%;
+height: 20px;
+margin-top: 40px;
+align-self: center; 
+justify-self: center; 
+position: relative;
+}
+
+#seperator1 hr{
+
+    border: none;
+    height: 1px;
+    background-color: rgb(182, 182, 182)
+}
+
+#image1{
+   display: block;
+/* position: relative; */
+width: 130px;
+height: 200px;
+/* background: rgb(133,131,131);
+background: linear-gradient(180deg, rgba(133,131,131,1) 0%, rgba(227,227,227,1) 100%); */
+border-radius: 44%;
+margin-left: 100px;
+margin-top: 30px;
+/* background-image: url(images/image1.jpg); */
+background-size: cover;
+border: 18px white solid;
+outline: 2px solid rgb(0, 0, 0);
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+
+}
+
+
+#photo{
+
+    width: 130px;
+    height: 200px;
+background: rgb(133,131,131);
+background: linear-gradient(180deg, rgba(133,131,131,1) 0%, rgba(227,227,227,1) 100%);
+border-radius: 45%;
+overflow: hidden;
+}
+#photo img{
+
+    padding-left: 10px;
+   padding-top: 10px;
+}
+
+#leave1{
+    /* display: flex; */
+    position: absolute;
+    width: 30px;
+    height: 55px;
+    left: 40%;
+    top: 10%;
+
+    border-radius: 50% 0% 50% 0%;
+    transform: rotate(20deg); 
+    /* margin-left: 0px; */
+    border: 0.5px gold solid;
+    background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(227,227,227,1) 100%);
+  
+
+}
+
+#leave2{
+     /* display: flex;  */
+    position: absolute ;
+    width: 30px;
+    height: 55px;
+    
+    border-radius: 0% 50% 0% 50%;
+    transform: rotate(256deg); 
+    /* margin-left: 90px; */
+    /* margin-top: 80px; */
+    top: 80%;
+    left: 86%;
+border: 0.5px gold solid;
+    background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(227,227,227,1) 100%);
+    
+}
+    
+#middle{
+    display: flex;
+    flex-direction: row;
+}
+
+#detail{
+
+    margin-top: 80px;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#detailing{
+    font-size: 17px;
+    color: #5a5a5a;
+    font-weight: normal;
+}
+#seperator2{
+    width: 70%;
+    height: 20px;
+    margin-top: 60px;
+    align-self: center; 
+    justify-self: center; 
+    position: relative;
+}
+#seperator2 hr{
+
+    border: none;
+    height: 1px;
+    background-color: rgb(182, 182, 182)
+}
+
+#seperator3{
+    width: 70%;
+    height: 20px;
+    margin-top: 150px;
+    align-self: center; 
+    justify-self: center; 
+    position: relative;
+}
+#seperator3 hr{
+
+    border: none;
+    height: 1px;
+    background-color: rgb(20, 20, 20)
+}
+#price{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: 390px;
+    margin-left: 0px;
+    font-size: 25px;
+    font-weight: bold;
+    justify-self: center;
+        align-self: center;
+}
+
+#bin{
+
+    margin-top: 130px;
+    margin-left: 30px;
+}
+
+#quan{
+
+    /* width: 60px;
+    height: 164px; */
+    display: flex;
+    flex-direction: column;
+    /* background: #000000; */
+    margin-top: 80px;
+    margin-left: 50px;
+    gap: 2px;
+    
+    }
+
+#quan button{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    color: white;
+    background-color: #000;
+    border: none;
+}
+
+#quan div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: #000;
+    border: none;
+}
+    
+.container{
+    position: relative;
+  display: inline-block; 
+}
+
+
+/* ---------------------------RESPOSIVE--------------- */
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .responsive-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .text-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .button {
+        width: 100%;
+    }
+}
+
+
+
+
+/* .counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 10px;
+    border-radius: 8px;
+    width: 60px;
+    height: 164px;
+}
+.counter button {
+    background: transparent;
+    border: none;
+    color: white;
+    background-color: #000;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    width: 50px;
+    text-align: center;
+    width: 60px;
+    height: 164px;
+}
+.counter input {
+    width: 50px;
+    text-align: center;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    background-color: #000;
+}
+.counter input::-webkit-outer-spin-button,
+.counter input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+} */
+
