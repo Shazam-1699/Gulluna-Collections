@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { auth, googleProvider } from "../config/firebase";
+import { createUserWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth"
 import "../assets/styles/login.css"
 import logo from "../assets/images/07Oct24_Anis_Free_Upload_-removebg-preview.png";
 import facebookLogo from "../assets/icons/icon-park--facebook.svg";
@@ -17,7 +19,7 @@ function Login() {
     setIsSignup(!isSignup);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     
     if (isSignup) {
@@ -25,14 +27,39 @@ function Login() {
         alert("Passwords do not match!");
         return;
       }
-      console.log(`Signing Up with: ${username}, ${password}`);
+      try {
+        createUserWithEmailAndPassword(auth, username, password);
+      } catch (error) {
+        console.error(err);
+      }
     } else {
-      console.log(`Logging In with: ${username}, ${password}`);
+      try {
+        createUserWithEmailAndPassword(auth, username, password);
+      } catch (error) {
+        console.error(error);
+      }
     }
 
     // Simulating login success and navigating to home page
     navigate("/home");
   };
+
+  const signinwithGoogle = async () => {
+    try {
+      await signInWithPopup( auth, googleProvider )
+    } catch (error) {
+      console.error(error);
+    }
+    navigate("/home");
+  }
+
+  const logOut = async () => {
+    try {
+      await signOut(auth);
+    } catch (error) {
+      console.error(error);
+    }
+  }
 
   return (
     <div className="container">
@@ -96,6 +123,11 @@ function Login() {
         </form>
 
         <p className="or-text">OR</p>
+        <div className="social-icons">
+          <img className="icon" src={googleLogo} onClick={signinwithGoogle} alt="Google" />
+          <img className="icon" src={facebookLogo} alt="facebook" />
+
+        </div>
       </div>
     </div>
     </div>
