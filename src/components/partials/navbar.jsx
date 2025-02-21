@@ -10,9 +10,8 @@ function Navbar(){
         <div className="wrapper">
             <nav>
                 <div className="navbar">
-                <div className="logo">
-                <h1>Gulluna</h1>
-                <p>Collections</p>
+                <div id="logo">
+                GULLUNA <span>COLLECTIONS</span> 
                 </div>
                 <a href="/home">Home</a>
                 <a href="">Categories</a>
