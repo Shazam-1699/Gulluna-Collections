@@ -7,6 +7,7 @@ import Productpage from "./pages/productpage";
 import Categories from "./pages/categories";
 import ShoppingCart from "./pages/cart";
 
+
 function App() {
   return (
     <Router>
