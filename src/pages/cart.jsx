@@ -1,4 +1,4 @@
-import React from "react";
+import React,{ useState } from "react";
 import "../assets/styles/shopCartStyle.css";
 import Navbar from "../components/partials/navbar";
 import Footer from "../components/partials/footer";
@@ -111,3 +111,5 @@ const ShoppingCart = () => {
         </div>
     );
 };
+
+export default ShoppingCart;

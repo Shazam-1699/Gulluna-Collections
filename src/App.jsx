@@ -5,6 +5,7 @@ import Login from "../src/pages/login";
 import Homepage from "../src/pages/homepage";
 import Productpage from "./pages/productpage";
 import Categories from "./pages/categories";
+import ShoppingCart from "./pages/cart";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/home" element={<Homepage />}/>
         <Route path="/product" element={<Productpage />} />
         <Route path="/categories" element={<Categories />} />
+        <Route path="/cart" element={<ShoppingCart />} />
       </Routes>
     </Router>
   );

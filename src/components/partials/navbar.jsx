@@ -21,7 +21,8 @@ function Navbar(){
                     <input type="text" name="Search" id="search" placeholder=" Search" onChange={(e) => setSearch(e.target.value)} />
                 </form>
                 <div className="icons">
-                    <img src={cartIcon} alt="cart" />
+                    <a href="/cart"> <img src={cartIcon} alt="cart" /> </a>
+                    
                     <img src={accountIcon} alt="account" />
                 </div>
                 </div>

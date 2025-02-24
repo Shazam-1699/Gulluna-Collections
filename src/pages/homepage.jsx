@@ -16,18 +16,6 @@ import firebase from "firebase/compat/app";
 
 function Homepage() {
   // ✅ Products Data
-  const products = {
-    "products": [
-      {
-        "id": 1,
-        "image": PC, 
-        "name": "Pasmina Shawl",
-        "description": "Luxurious, soft wool shawl, often handwoven.",
-        "price": 10000
-      }
-    ]
-  };
-
   // Products Database
   const [ProductsList,setProductsList] = useState([]);
   const ProductsCollectionRef = collection(db,"Products")
@@ -36,6 +24,11 @@ function Homepage() {
     const getProductsList = async () => {
       try{
       const data = await getDocs(ProductsCollectionRef);
+      const filteredData = data.docs.map((doc) => ({
+        ...doc.data(),
+        id:doc.id,
+      }));
+      setProductsList(filteredData);
       console.log(data);
       } catch (err){
         console.error(err);
@@ -104,9 +97,9 @@ function Homepage() {
 
       {/* Products Mapping */}
       <div className="flex overflow-x-auto gap-4 p-10 z-20 ">
-  {products.products.map((p) => (
+  {ProductsList.map((p) => (
     <div key={p.id} className="flex-none  w-[320px]"> {/* Adjust the width here */}
-      <ProductCard image={p.image} title={p.name} description={p.description} price={p.price} />
+      <ProductCard image={PC} name={p.Name} description={p.Description} price={p.Price} />
     </div>
   ))}
 </div>
@@ -144,8 +137,8 @@ function Homepage() {
       {/* products below sale */}
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-10">
-        {products.products.map((p) => (
-          <ProductCard key={p.id} image={p.image} title={p.name} description={p.description} price={p.price} />
+        {ProductsList.map((p) => (
+          <ProductCard key={p.id} image={PC} name={p.Name} description={p.Description} price={p.Price} />
         ))}
       </div>
 
