@@ -14,7 +14,7 @@ function Navbar(){
                 GULLUNA <span id="collections">COLLECTIONS</span> 
                 </div>
                 <a href="/home">Home</a>
-                <a href="">Categories</a>
+                <a href="/categories">Categories</a>
                 <a href="">Services</a>
                 <a href="">More</a>
                 <form>

@@ -94,7 +94,7 @@ function Homepage() {
       </div>
 
       {/* Card Section */}
-      <section className="bg-gradient-to-l from-black to-gray-300 h-40 w-full text-white text-center py-5 z-10">
+      <section className="bg-gradient-to-l from-black to-gray-300 h-50 w-full text-white text-center py-5 z-10">
         <h1 className="text-5xl font-fjalla">New Collections</h1>
         <p className="text-lg font-light font-open-sans mt-2">
           Discover Guluna Clothing's latest collection, where timeless tradition
