@@ -4,11 +4,15 @@ import ProductCard from "../components/partials/productcard";
 import Salepic from "../assets/images/Salepic.png";
 import Model from "../assets/images/Mahira Khan.png";
 import Navbar from "../components/partials/navbar";
+import { db } from "../config/firebase";
+import { getDocs, collection } from "firebase/firestore";
+
 import PC from "../assets/images/PC.png";
 import PC2 from "../assets/images/Mahira Khan beige.png";
 import PC3 from "../assets/images/Mahira Khan Black.png";
 import PC4 from "../assets/images/Mahira Khan red.png";
 import PC5 from "../assets/images/Mahira Khan White.png";
+import firebase from "firebase/compat/app";
 
 function Homepage() {
   // ✅ Products Data
@@ -24,6 +28,22 @@ function Homepage() {
     ]
   };
 
+  // Products Database
+  const [ProductsList,setProductsList] = useState([]);
+  const ProductsCollectionRef = collection(db,"Products")
+
+  useEffect(() => {
+    const getProductsList = async () => {
+      try{
+      const data = await getDocs(ProductsCollectionRef);
+      console.log(data);
+      } catch (err){
+        console.error(err);
+      }
+    }
+    getProductsList();
+  },[])
+
   // ✅ Sale Timer Logic
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
@@ -37,7 +57,6 @@ function Homepage() {
     setDays(Math.floor(time / (1000 * 60 * 60 * 24)));
     setHours(Math.floor((time / (1000 * 60 * 60)) % 24));
     setMinutes(Math.floor((time / 1000 / 60) % 60));
-    setSeconds(Math.floor((time / 1000) % 60));
   };
 
   useEffect(() => {
