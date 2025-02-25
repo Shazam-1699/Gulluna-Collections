@@ -13,7 +13,7 @@ function Categories() {
         <div className="category-container">
             <Navbar />
             <div id="categories">
-      <h2>Categories</h2>
+      <h2 className="categories-h2">Categories</h2>
       <div id="parts">
         <div className="part">
           <div id="large">

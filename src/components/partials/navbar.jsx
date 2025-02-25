@@ -15,10 +15,9 @@ function Navbar(){
                 </div>
                 <a href="/home">Home</a>
                 <a href="/categories">Categories</a>
-                <a href="">Services</a>
-                <a href="">More</a>
+                <a href="">Wishlist</a>
                 <form>
-                    <input type="text" name="Search" id="search" placeholder=" Search" onChange={(e) => setSearch(e.target.value)} />
+                    <input type="text" name="Search" id="search" placeholder="🔍 Search" onChange={(e) => setSearch(e.target.value)} />
                 </form>
                 <div className="icons">
                     <a href=""> <img src={cartIcon} alt="cart" /> </a>

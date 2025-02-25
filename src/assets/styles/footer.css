@@ -1,6 +1,5 @@
 .footer{
-    background: rgb(209,209,209);
-    background: linear-gradient(270deg, rgba(209,209,209,1) 0%, rgba(12,2,2,1) 8%);
+    background: #0A0A14;
     color: white;
     height:auto;
     width: 100%;
@@ -9,4 +8,45 @@
     flex-flow: column;
     bottom: 0;
     z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
+.footer-logo{
+    padding-top: 17px;
+    margin-left: -42px;
+}
+.footer-logo img{
+    height: 141px;
+    width: 200px;
+    margin-left: -42px;
+}
+.footer h1{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.Contact-us{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.Customer-Support{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-socials{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
