@@ -72,7 +72,7 @@ const ShoppingCart = () => {
                 <div id="seperator1"><hr /></div>
                 
                 <div id="middle">
-                    <div className="container">
+                    <div className="cart-container">
                         <div id="image1">
                             <div id="photo">
                                 <img src="images/image1-removebg-preview.png" alt="mahira khan" height="199" />
