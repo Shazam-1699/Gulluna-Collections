@@ -96,7 +96,7 @@
 
 /* Active toggle button style */
 .toggle-buttons button.active {
-  background-color: black;
+  background-color: #0A0A14;
   color: white;
 }
 
@@ -122,7 +122,7 @@ form {
 
 /* Login button styling */
 .login-btn {
-  background-color: black;
+  background-color: #0A0A14;
   color: white;
   font-size: 16px;
   font-weight: bold;
