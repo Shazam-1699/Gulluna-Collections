@@ -6,6 +6,7 @@
     text-align: center;
     display: flex;
     flex-flow: column;
+    position: fixed;
     bottom: 0;
     z-index: 1000;
     display: flex;

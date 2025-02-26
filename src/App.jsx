@@ -5,7 +5,7 @@ import Login from "../src/pages/login";
 import Homepage from "../src/pages/homepage";
 import Productpage from "./pages/productpage";
 import Categories from "./pages/categories";
-import ShoppingCart from "./pages/cart";
+import ShoppingCart from "./components/partials/cart";
 
 
 function App() {
