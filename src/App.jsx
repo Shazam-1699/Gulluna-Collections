@@ -5,7 +5,7 @@ import Login from "../src/pages/login";
 import Homepage from "../src/pages/homepage";
 import Productpage from "./pages/productpage";
 import Categories from "./pages/categories";
-import ShoppingCart from "./components/partials/cart";
+import CartPopup from "./components/cart";
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         <Route path="/home" element={<Homepage />}/>
         <Route path="/product" element={<Productpage />} />
         <Route path="/categories" element={<Categories />} />
-        <Route path="/cart" element={<ShoppingCart />} />
+        <Route path="/cart" element={<CartPopup />} />
       </Routes>
     </Router>
   );
