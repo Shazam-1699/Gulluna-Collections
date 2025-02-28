@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import "../../assets/styles/navbar.css";
 import cartIcon from "../../assets/icons/cart.svg";
 import accountIcon from "../../assets/icons/account.svg";
-import CartPopup from "../cart"; // Import the CartPopup component
+import CartPopup from "../cart";
 
 function Navbar() {
     const [search, setSearch] = useState("");
-    const [isCartOpen, setIsCartOpen] = useState(false); // State to manage popup visibility
+    const [isCartOpen, setIsCartOpen] = useState(false);
 
     return (
         <div className="wrapper">
@@ -24,13 +24,14 @@ function Navbar() {
                             name="Search" 
                             id="search" 
                             placeholder="🔍 Search" 
+                            value={search}
                             onChange={(e) => setSearch(e.target.value)} 
                         />
                     </form>
                     <div className="icons">
                         <a href="#" onClick={(e) => { 
                             e.preventDefault(); 
-                            setIsCartOpen(true); // Open cart popup when clicked
+                            setIsCartOpen(true);
                         }}>
                             <img src={cartIcon} alt="cart" />
                         </a>
@@ -39,7 +40,6 @@ function Navbar() {
                 </div>
             </nav>
 
-            {/* Render the CartPopup component when isCartOpen is true */}
             <CartPopup isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
         </div>
     );

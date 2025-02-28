@@ -1,25 +1,23 @@
 import React, { useEffect } from "react";
-import { X } from "lucide-react";
 import MKR from "../assets/images/Mahira khan red.png";
-import "../assets/styles/cart.css"; // Ensure you have the correct CSS file
+import "../assets/styles/cart.css";
 
 const CartPopup = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
-  // Close popup when clicking outside the cart
   const handleOverlayClick = (e) => {
     if (e.target.classList.contains("overlay")) {
       onClose();
     }
   };
+  
+  const quantity = 1;
 
   return (
     <div className="overlay" onClick={handleOverlayClick}>
-      <div className="popup">
-        <button className="close-button" onClick={onClose}>
-          <X size={20} />
-        </button>
-        <h2 className="title">Your Cart</h2>
+  <div className="popup" onClick={(e) => e.stopPropagation()}>
+    <button className="close-button" onClick={onClose}>×</button>
+    <h2 className="cart-h1">Your Cart</h2>
         <div className="cart-items">
           {[1, 2].map((item, index) => (
             <div key={index} className="cart-item">
@@ -30,9 +28,9 @@ const CartPopup = ({ isOpen, onClose }) => {
                   <p className="item-info">Size: S</p>
                   <p className="item-info">Color: Red</p>
                   <div className="quantity-controls">
-                    <button className="quantity-button">-</button>
-                    <span>1</span>
-                    <button className="quantity-button">+</button>
+                    <button className="quantity-button" onClick={() => {quantity - 1}}>-</button>
+                    <span>{quantity}</span>
+                    <button className="quantity-button" onClick={() => {quantity + 1}}>+</button>
                   </div>
                 </div>
               </div>
@@ -63,8 +61,8 @@ const CartPopup = ({ isOpen, onClose }) => {
           We guarantee no additional charges on delivery.
         </p>
         <div className="cart-actions">
-          <button className="checkout-button">Check Out</button>
-          <button className="back-button" onClick={onClose}>Go Back</button>
+          <button className="cart-btns checkout-button">Check Out</button>
+          <button className="cart-btns back-button" onClick={onClose}>Go Back</button>
         </div>
       </div>
     </div>
