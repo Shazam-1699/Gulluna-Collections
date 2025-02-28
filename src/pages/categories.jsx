@@ -2,61 +2,62 @@ import React from "react";
 import Navbar from "../components/partials/navbar";
 import Footer from "../components/partials/footer";
 import "../assets/styles/categoryStyle.css";
-import Bottom from "../assets/images/Categories/Bottoms.png";
-import Dress from "../assets/images/Categories/Dresses.png";
-import Scarf from "../assets/images/Categories/Scarfs.png";
-import Shawl from "../assets/images/Categories/Shawls.png";
-import Top from "../assets/images/Categories/Top.png";
+import Bottom from "../assets/images/Categories/Bottoms2.jpg";
+import Dress from "../assets/images/Categories/dress2.jpg";
+import Scarf from "../assets/images/Categories/scarf4.jpg";
+import Shawl from "../assets/images/Categories/Shawl2.jpg";
+import Top from "../assets/images/Categories/Top2.jpg";
 
 function Categories() {
     return (
         <div className="category-container">
             <Navbar />
-            <div id="categories">
-      <h2 className="categories-h2">Categories</h2>
-      <div id="parts">
-        <div className="part">
+           
+
+      
+      <div id="categories-main">
+        <div className="categories-part">
           <div id="large">
-            <div className="octagon-container">
+            
               <img src={Top} className="octagon" height="150px" alt="Tops" />
-            </div>
+           
           </div>
-          <div id="small">Tops</div>
-        </div>
-        <div className="part">
+          <h1 id="small">Tops</h1>
+       </div>
+        <div className="categories-part">
           <div id="large">
-            <div className="octagon-container">
-              <img src={Dress} className="octagon" height="150px" alt="Dresses" />
-            </div>
+            
+              <img src={Dress} className="octagon" height="80px" alt="Dresses" />
+           
           </div>
-          <div id="small">Dresses</div>
+          <h1 id="small">Dresses</h1>
         </div>
-        <div className="part">
+        <div className="categories-part">
           <div id="large">
-            <div className="octagon-container">
+            
               <img src={Shawl} className="octagon" height="150px" alt="Shawls" />
-            </div>
+            
           </div>
-          <div id="small">Shawls</div>
+          <h1 id="small">Shawls</h1>
         </div>
-        <div className="part">
+        <div className="categories-part">
           <div id="large">
-            <div className="octagon-container">
-              <img src={Scarf} className="octagon" height="150px" alt="Scarfs" />
-            </div>
+           
+              <img src={Scarf} className="octagon" height="100px" alt="Scarfs" />
+            
           </div>
-          <div id="small">Scarfs</div>
+          <h1 id="small">Scarfs</h1>
         </div>
-        <div className="part">
+        <div className="categories-part">
           <div id="large">
-            <div className="octagon-container">
+            
               <img src={Bottom} className="octagon" height="150px" alt="Bottoms" />
-            </div>
+            
           </div>
-          <div id="small">Bottoms</div>
+          <h1 id="small">Bottoms</h1>
         </div>
-      </div>
-    </div>
+        </div>
+     
         <Footer />
         </div>
     );

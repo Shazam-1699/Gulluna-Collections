@@ -1,0 +1,65 @@
+*{
+margin: 0px;
+padding: 0px;
+}
+
+.kaushan-script-regular {
+    font-family: "Kaushan Script", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+#thank-main{
+    display: flex;
+   
+    width: 70%;
+    height: 500px;
+    margin-top: 130px;
+    margin-bottom: 100px;
+ justify-self: center;
+ flex-direction: column;
+
+ align-items: center;
+ /* justify-content: center; */
+
+}
+
+#party{
+
+    height: 80px;
+    width: 140px;
+    position: absolute;
+    top: 158px;
+}
+#bag{
+
+    height: 140px;
+    width: 140px;
+    margin-top: 60px;
+}
+
+#thank-heading{
+    font-family: "Kaushan Script", serif;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 50px;
+    color: #0A0A14;
+
+}
+
+#thank-para{
+
+    text-align: center;
+    margin-top: 20px;
+}
+
+#thank-btn{
+
+    height: 39px;
+    width: 450px;
+    background: #0A0A14;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 30px;
+}
