@@ -1,3 +1,9 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; /* Adjust the gap between cards as needed */
+}
+
 .product-card {
     display: inline-block;
     width: 313px;

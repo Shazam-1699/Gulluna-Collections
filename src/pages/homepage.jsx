@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import {BsArrowLeftCircleFill, BsArrowRightCircleFill} from "react-icons/bs"
 import "../assets/styles/homepage.css";
 import Footer from "../components/partials/footer";
 import ProductCard from "../components/partials/productcard";
@@ -7,52 +6,29 @@ import Salepic from "../assets/images/Salepic.png";
 import Model from "../assets/images/Homepage Models/Mahira Khan.png";
 import Model2 from "../assets/images/Homepage Models/Model2.png";
 import Navbar from "../components/partials/navbar";
-import { db } from "../config/firebase";
-import { getDocs, collection } from "firebase/firestore";
-
-import PC from "../assets/images/Products/MKW.png";
 
 function Homepage() {
   const Models = {
-    "slides" : [
+    slides: [
       {
-        "src":Model,
-        "alt":"Model1"
+        src: Model,
+        alt: "Model1",
       },
       {
-        "src":Model2,
-        "alt":"Model2"
-      }
-    ]
-  }
+        src: Model2,
+        alt: "Model2",
+      },
+    ],
+  };
   const [slide, setSlide] = useState(0);
 
   const nextSlide = () => {
-    setSlide( slide === Models.slides.length - 1 ? 0 : slide + 1);
-  }
+    setSlide(slide === Models.slides.length - 1 ? 0 : slide + 1);
+  };
 
   const prevSlide = () => {
-    setSlide( slide === 0 ? Models.slides.length - 1 : slide - 1);
-  }
-
-  const [ProductsList, setProductsList] = useState([]);
-  const ProductsCollectionRef = collection(db, "Products");
-
-  useEffect(() => {
-    const getProductsList = async () => {
-      try {
-        const data = await getDocs(ProductsCollectionRef);
-        const filteredData = data.docs.map((doc) => ({
-          ...doc.data(),
-          id: doc.id,
-        }));
-        setProductsList(filteredData);
-      } catch (err) {
-        console.error(err);
-      }
-    };
-    getProductsList();
-  }, []);
+    setSlide(slide === 0 ? Models.slides.length - 1 : slide - 1);
+  };
 
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
@@ -72,13 +48,12 @@ function Homepage() {
   useEffect(() => {
     const interval = setInterval(() => getTime(deadline), 1000);
     const slideInterval = setInterval(() => nextSlide(), 2000);
-  
+
     return () => {
       clearInterval(interval);
       clearInterval(slideInterval);
     };
   }, [slide]); // Add `slide` as a dependency
-  
 
   return (
     <div>
@@ -95,17 +70,27 @@ function Homepage() {
           <button>Explore Now</button>
         </section>
         <div className="image-container">
-          <BsArrowLeftCircleFill className="arrow arrow-left" onClick={prevSlide} />
           {Models.slides.map((item, idx) => {
-              return (<img 
-                          src={item.src} 
-                          alt={item.alt} 
-                          key={idx} 
-                          className={slide === idx ? "slide slide-active" : "slide"} />);})}
-          <BsArrowRightCircleFill className="arrow arrow-right" onClick={nextSlide} />
+            return (
+              <img
+                src={item.src}
+                alt={item.alt}
+                key={idx}
+                className={slide === idx ? "slide slide-active" : "slide"}
+              />
+            );
+          })}
           <span className="indicators">
-            {Models.slides.map((_,idx) => {
-              return <button key={idx} onClick={() => { setSlide(idx) }} className={slide === idx ? "indicator" : "indicator indicator-inactive"}></button>
+            {Models.slides.map((_, idx) => {
+              return (
+                <button
+                  key={idx}
+                  onClick={() => {
+                    setSlide(idx);
+                  }}
+                  className={slide === idx ? "indicator" : "indicator indicator-inactive"}
+                ></button>
+              );
             })}
           </span>
         </div>
@@ -120,9 +105,7 @@ function Homepage() {
       </section>
 
       <div className="products-container">
-        {ProductsList.map((p) => (
-          <ProductCard key={p.id} image={PC} name={p.Name} description={p.Description} price={p.Price} />
-        ))}
+        <ProductCard />
       </div>
 
       <div className="sale-section">
@@ -156,13 +139,8 @@ function Homepage() {
           <button>Shop Now</button>
         </div>
       </div>
+      <ProductCard />
 
-      <div className="grid-container">
-        {ProductsList.map((p) => (
-          <ProductCard key={p.id} image={PC} name={p.Name} description={p.Description} price={p.Price} />
-        ))}
-      </div>
-      
       <Footer />
     </div>
   );

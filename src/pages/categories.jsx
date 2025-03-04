@@ -16,6 +16,7 @@ function Categories() {
 
       
       <div id="categories-main">
+        <a href="/tops">
         <div className="categories-part">
           <div id="large">
             
@@ -24,6 +25,7 @@ function Categories() {
           </div>
           <h1 id="small">Tops</h1>
        </div>
+       </a>
         <div className="categories-part">
           <div id="large">
             
