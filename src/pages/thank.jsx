@@ -6,7 +6,7 @@ import bag from "../assets/images/shopping-bag.png";
 import party from "../assets/images/Wormies Confetti.png";
 
 
-function thankyou() {
+function Thankyou() {
     return (
         <div className="thankyou-container">
             <Navbar />
@@ -20,8 +20,8 @@ function thankyou() {
 
              <p id="thank-para"> Your Satisfaction Matters! Thank You For Your Trust <br />
              We're Committed To Excellence</p>
-
-             <button id="thank-btn"> Continue Shopping</button>
+            <a href="/home"> <button id="thank-btn"> Continue Shopping</button> </a>
+             
          </div>
        
       
@@ -31,4 +31,4 @@ function thankyou() {
     );
 }
 
-export default thankyou;
+export default Thankyou;
