@@ -11,7 +11,7 @@ const Tops = () => {
             
             <div className="cat-container">
             <div className="cat-links">
-                Home / Categories / Tops
+               <a href="/home"> Home </a> / <a href="/categories"> Categories </a> / <a href="/tops"> Tops </a>
             </div>
                 <div className="cat-container-img">
                     <div className="container-img-des">
