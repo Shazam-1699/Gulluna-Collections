@@ -27,6 +27,7 @@ export default function ProductCard() {
   return (
     <div className="grid-container">
       {productsList.map((p) => (
+        <a href="/product" className="product-link">
         <div key={p.id} className="product-card">
           <div className="card-image">
             <img src={PC} alt={p.Name} className="product-image" />
@@ -38,6 +39,7 @@ export default function ProductCard() {
             <p className="product-price">PKR {p.Price}</p>
           </div>
         </div>
+        </a>
       ))}
     </div>
   );
