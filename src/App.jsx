@@ -11,7 +11,9 @@ import Tops from "./pages/Category-Pages/tops";
 import Dresses from "./pages/Category-Pages/dresses";
 import Scarfs from "./pages/Category-Pages/scarfs";
 import Shawls from "./pages/Category-Pages/shawls";
-import Bottoms from "./pages/Category-Pages/bottoms"; 
+import Bottoms from "./pages/Category-Pages/bottoms";
+import Contactus from "./pages/contactus"; 
+import RegistrationForm from "./pages/registrationfrom";
 
 
 
@@ -30,6 +32,8 @@ function App() {
         <Route path="/scarfs" element={<Scarfs />} />
         <Route path="/shawls" element={<Shawls />} />
         <Route path="/bottoms" element={<Bottoms />} />
+        <Route path="/contactus" element={<Contactus />} />
+        <Route path="/register" element={<RegistrationForm />} />
       </Routes>
     </Router>
   );

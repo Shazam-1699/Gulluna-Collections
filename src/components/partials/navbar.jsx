@@ -13,11 +13,11 @@ function Navbar() {
             <nav>
                 <div className="navbar">
                     <div id="logo">
-                        GULLUNA <span id="collections">COLLECTIONS</span>
+                        <a href="/home">GULLUNA <span id="collections">COLLECTIONS</span></a>
                     </div>
-                    <a href="/home">Home</a>
-                    <a href="/categories">Categories</a>
-                    <a href="">Wishlist</a>
+                    <a className="nav-link" href="/home">Home</a>
+                    <a className="nav-link" href="/categories">Categories</a>
+                    <a className="nav-link" href="">Wishlist</a>
                     <form>
                         <input 
                             type="text" 
@@ -35,7 +35,9 @@ function Navbar() {
                         }}>
                             <img src={cartIcon} alt="cart" />
                         </a>
+                        <a href="/register">
                         <img src={accountIcon} alt="account" />
+                        </a>
                     </div>
                 </div>
             </nav>

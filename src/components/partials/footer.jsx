@@ -10,14 +10,14 @@ function Footer(){
             </div>
 
             <div className="Contact-us">
-                <h1>Contact Us</h1>
+                <a href="/contactus"><h1>Contact Us</h1></a>
                 <a href="">Email:info@firnas.tech</a>
                 <a href="">Phone:+92 316 068 3400</a>
                 <a href="">About Us</a>
             </div>
 
             <div className="Customer-Support">
-                <h1>Customer Support</h1>
+                <a href="/contactus"><h1>Customer Support</h1></a>
                 <a href="">Returns & Refunds</a>
                 <a href="">Privacy & Policy</a>
                 <a href="">Privacy & Policy</a>

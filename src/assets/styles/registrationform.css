@@ -1,0 +1,65 @@
+.registration-container {
+    width: 80%;
+    margin-top: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.registration-h1 {
+    font-size: 32px;
+    text-align: justify;
+    font-weight: bold;
+    color: #000;
+}
+
+.registration-p {
+    font-size: 16px;
+    text-align: justify;
+    color: #7a7a7a;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.input-row {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.registration-input {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.registration-textarea {
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+}
+
+.submit-btn {
+    background: #0A0A14;
+    width: 55%;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
