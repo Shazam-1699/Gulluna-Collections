@@ -26,6 +26,7 @@ function Categories() {
           <h1 id="small">Tops</h1>
        </div>
        </a>
+       <a href="/dresses">
         <div className="categories-part">
           <div id="large">
             
@@ -34,6 +35,8 @@ function Categories() {
           </div>
           <h1 id="small">Dresses</h1>
         </div>
+        </a>
+        <a href="/shawls">
         <div className="categories-part">
           <div id="large">
             
@@ -42,6 +45,8 @@ function Categories() {
           </div>
           <h1 id="small">Shawls</h1>
         </div>
+        </a>
+        <a href="/scarfs">
         <div className="categories-part">
           <div id="large">
            
@@ -50,6 +55,8 @@ function Categories() {
           </div>
           <h1 id="small">Scarfs</h1>
         </div>
+        </a>
+        <a href="bottoms">
         <div className="categories-part">
           <div id="large">
             
@@ -58,6 +65,7 @@ function Categories() {
           </div>
           <h1 id="small">Bottoms</h1>
         </div>
+        </a>
         </div>
      
         <Footer />

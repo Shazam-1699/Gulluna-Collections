@@ -8,6 +8,11 @@ import Categories from "./pages/categories";
 import CartPopup from "./components/cart";
 import Thankyou from "./pages/thank";
 import Tops from "./pages/Category-Pages/tops";
+import Dresses from "./pages/Category-Pages/dresses";
+import Scarfs from "./pages/Category-Pages/scarfs";
+import Shawls from "./pages/Category-Pages/shawls";
+import Bottoms from "./pages/Category-Pages/bottoms"; 
+
 
 
 function App() {
@@ -21,6 +26,10 @@ function App() {
         <Route path="/cart" element={<CartPopup />} />
         <Route path="/thanks" element={<Thankyou />} />
         <Route path="/tops" element={<Tops />} />
+        <Route path="/dresses" element={<Dresses />} />
+        <Route path="/scarfs" element={<Scarfs />} />
+        <Route path="/shawls" element={<Shawls />} />
+        <Route path="/bottoms" element={<Bottoms />} />
       </Routes>
     </Router>
   );
