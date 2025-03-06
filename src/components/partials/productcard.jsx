@@ -3,6 +3,8 @@ import "../../assets/styles/productcard.css";
 import { db } from "../../config/firebase";
 import { getDocs, collection } from "firebase/firestore";
 import PC from "../../assets/images/Products/MKW.png";
+import dotmenu from "../../assets/icons/dots.png";
+import blackHeart from "../../assets/icons/black-heart.png";
 
 export default function ProductCard() {
   const [productsList, setProductsList] = useState([]);
@@ -19,7 +21,7 @@ export default function ProductCard() {
         setProductsList(filteredData);
       } catch (err) {
         console.error(err);
-      }
+      }S
     };
     getProductsList();
   }, []);
@@ -30,6 +32,12 @@ export default function ProductCard() {
         <a href="/product" className="product-link">
         <div key={p.id} className="product-card">
           <div className="card-image">
+            <div id="Two-icons">
+                          
+                          <img src={dotmenu} alt="tree dots" />
+                          <img src={blackHeart} alt="menu" />
+                          
+                      </div>
             <img src={PC} alt={p.Name} className="product-image" />
           </div>
           <div className="product-details">

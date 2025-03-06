@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.kaushan-script-regular {
+    font-family: "Kaushan Script", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+#Header1{
+
+    margin-top: 120px;
+    margin-left: 100px;
+
+}
+#spanHeader1{
+    color: gray;
+}
+
+#display{
+    margin-top: 50px;
+   display: block;
+    height: 550px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)),url(/src/assets/images/Categories/group.png);
+}
+
+#display-heading
+{
+ padding-top: 340px;
+ /* align-self: center; */
+ justify-self: center;
+color: white;
+font-family: "Kaushan Script", serif;
+font-weight: 400;
+font-size: 60px;
+}
+
+#display-para{
+
+    margin-top: 20px;
+    color: white;
+    justify-self: center;
+ text-align: center;
+    font-size: 20px;
+    font-weight: lighter;
+
+}
+
+#seasonHeading{
+margin-left: 5rem;
+color: black;
+font-weight: 700;
+font-size: 20px;
+margin-top: 30px;
+}
+
+#productBoxes{
+   display: flex;
+   flex-wrap: wrap;
+margin-top: 100px;
+gap: 40px;
+justify-content: center;
+margin-bottom: 50px;
+}

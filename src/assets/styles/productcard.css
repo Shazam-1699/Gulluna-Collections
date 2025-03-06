@@ -1,12 +1,7 @@
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px; /* Adjust the gap between cards as needed */
-}
 
 .product-card {
     display: inline-block;
-    width: 313px;
+    width: 270px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border: 1px solid #ddd;
@@ -20,6 +15,7 @@
   .product-image {
     width: 100%;
     border-radius: 8px;
+    justify-self: center;
   }
   .card-image{
     background: linear-gradient(180deg, #FFFFFF 50.5%, #979797 100%);
@@ -58,5 +54,14 @@
     font-size: 16px;
     font-weight: bold;
     margin-top: 5px;
+  }
+
+  
+  #Two-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    direction: rtl;
+    padding-right: 1.5rem;  
   }
   
