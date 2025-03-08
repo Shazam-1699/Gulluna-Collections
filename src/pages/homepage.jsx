@@ -35,7 +35,7 @@ function Homepage() {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
 
-  const deadline = "March, 3, 2025";
+  const deadline = "April, 1, 2025";
 
   const getTime = () => {
     const time = Date.parse(deadline) - Date.now();

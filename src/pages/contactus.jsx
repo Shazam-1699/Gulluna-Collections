@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "../assets/styles/contactus.css";
 import Navbar from '../components/partials/navbar';
+import Footer from '../components/partials/footer';
 import chat from "../assets/icons/chat.png";
 import callus from "../assets/icons/callus.png";
 import email from "../assets/icons/emailus.png";
@@ -68,6 +69,7 @@ function Contactus() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
